@@ -38,7 +38,7 @@ public class AlmExtFragment extends Fragment {
             Manifest.permission.WRITE_EXTERNAL_STORAGE
     };
 
-    final String fichero = "archivo";
+    final String fichero = Environment.getExternalStorageDirectory() + "/Document.txt";
     Context context;
 
     public static void verifyStoragePermissions(Activity activity){
